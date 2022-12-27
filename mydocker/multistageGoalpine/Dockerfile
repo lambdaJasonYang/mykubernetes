@@ -20,7 +20,8 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /ezserver
 ## STEP 2 - DEPLOY
 ##
 # FROM alpine:3.14
-FROM busybox
+# FROM busybox
+FROM scratch
 
 WORKDIR /
 

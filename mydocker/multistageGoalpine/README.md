@@ -7,8 +7,6 @@ docker build -t multistagegoweb .
 docker container run -p 3333:5000 --name looperA multistagegoweb
 ```
 
-docker container run -d -it --name looperA multistagegoweb sh -c 'while true; do date; sleep 1; done'
-
 # Debugging
 
 ```bash
